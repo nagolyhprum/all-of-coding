@@ -7,6 +7,9 @@
 /*
     while multiline comments start with a slash star
     and end with a star slash
+
+    comments do not execute like normal code and server
+    to help you and others understand what the code does
 */
 
 ///////////////
