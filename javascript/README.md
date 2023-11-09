@@ -1,6 +1,6 @@
 # Javascript
 
-## Core
+## [Core](https://github.com/nagolyhprum/all-of-coding/blob/main/javascript/core.js)
 
 ### Topics Covered:
 
