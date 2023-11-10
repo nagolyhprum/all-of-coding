@@ -52,8 +52,18 @@
 ### Pending Topics:
 
 * Control Structures
+    * if
+    * else if
+    * else
+    * switch
+    * case
+    * default
+    * ternery
+    * null coalescence
+    * scope - block, lexical, function
 * Iterations / Loops
 * Functions
+    * Closure
 * Objects and Arrays
 * Error Handling
 * Promises and Asynchronous Javascript
