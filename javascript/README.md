@@ -41,10 +41,16 @@
     * timeEnd
     * trace
     * clear
+* Operators
+    * Parenthesis, Exponent, Multiply, Divide, Add, Subtract
+    * Modulus
+    * Math library
+    * Comparision
+    * Logical
+    * Bitwise
 
 ### Pending Topics:
 
-* Operators
 * Control Structures
 * Iterations / Loops
 * Functions
