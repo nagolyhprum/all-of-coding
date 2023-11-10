@@ -9,17 +9,22 @@
     * Choose any of the top ranking results
     * Copy + paste the Javascript where appropriate
     * Click the "Run" button
-2. In browser (Best for people who want to learn)
+2. In debugger (Best for people who are more committed)
     * Enable your browser's developer tools
     * Right click and choose "Inspect"
     * Go to the console
     * Copy + paste the Javascript where appropriate
     * Press enter to run
-3. Node (Best for people who want to build)
+3. Node (Best for people who only want to learn Javascript) 
     * Install the program "node"
     * Create a file named "index.js"
     * Copy + paste the Javascript where appropriate
     * Run "node index.js" appropriately from the command line
+4. Webpage (Best for people who want to learn more than Javascript)
+    * Create a document called "index.html" and a file called "index.js"
+    * Copy + paste the Javascript where appropriate
+    * Edit the html document to include the Javascript
+    * Open the html document in your browser
 
 ### Topics Covered:
 
