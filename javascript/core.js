@@ -37,6 +37,8 @@ const c = "c"; // you can declare a variable
 // const c = "c"; // but NOT redeclare a variable
 // c = "c"; // nor set a variable
 
+const value = 1, condition = 2; // you can declare multiple variables at once for any modifier
+
 ////////////////
 // DATA TYPES //
 ////////////////
@@ -98,12 +100,13 @@ personName = person[nameKey]; // ...to access the name
 person.name = "Liz"; // we can also update the value
 
 // if we were afraid a value might not exist we can use optional chaining to prevent errors
-person.foot?.toes.length
+person.foot?.toes.length // this is called null coalescence and will return undefined if the value does not exist
 
 // finally you can use destructuring to get the values of an object
 const { 
     name, 
-    age, 
+    age : howOldAreYou, // you can also rename the variable
+    height : { feed }, // and go even deeper into nested objects
     dne = "default value", // you can even set default values for fields that might not exist
 } = person;
 
@@ -242,3 +245,44 @@ const bitwise_not = ~0b1010; // gives 0b0101
 const bitwise_xor = 0b1010 ^ 0b1100; // gives 0b0110
 const bitwise_left_shift = 0b1010 << 1; // gives 0b10100
 const bitwise_right_shift = 0b1010 >> 1; // gives 0b101
+
+////////////////////////
+// CONTROL STRUCTURES //
+////////////////////////
+
+// control structures allow us to choose what code to execute
+
+if(condition) {
+    // this code happens when the condition is true
+} else {
+    // this code happens when the condition is false
+    if(another_condition) { // we can separate out more conditions
+    } else if(yet_another_condition) { // or chain many of them together
+    }
+}
+
+if(condition) console.log("this single line happens when true");
+else console.log("this single line happens when false");
+
+const ternery = condition ? "this happens when true" : "this happens when false";
+
+switch(value) { // take value and find the first thing it matches
+    case 1:
+        // this case is for the number 1 only
+        break;
+    case true:
+    case "string":
+    case equal - bitwise_and: // you can even use expressions
+        // this case is for true and "string" only
+        break;
+    default: {
+        // everything else goes here
+        break;
+    }
+}
+// it is effectively equal to the following if/else chain
+if(value === 1) {
+} else if(value === true || value === "string" || value === equal - bitwise_and) {
+} else {
+}
+// it is up to you which one to use, switch is generally more error prone and less flexible

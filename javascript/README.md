@@ -72,22 +72,21 @@
     * Comparision
     * Logical
     * Bitwise
-
-### Pending Topics:
-
 * Control Structures
     * if
     * else if
     * else
+    * ternery
     * switch
     * case
     * default
-    * ternery
-    * null coalescence
-    * scope - block, lexical, function
+
+### Pending Topics:
+
 * Iterations / Loops
 * Functions
     * Closure
+    * scope - block, lexical, function
 * Objects and Arrays
 * Error Handling
 * Promises and Asynchronous Javascript
