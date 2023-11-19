@@ -273,7 +273,7 @@ switch(value) { // take value and find the first thing it matches
     case true:
     case "string":
     case equal - bitwise_and: // you can even use expressions
-        // this case is for true and "string" only
+        // this case is for true, "string", and `equal - bitwise_and` only
         break;
     default: {
         // everything else goes here
@@ -286,3 +286,36 @@ if(value === 1) {
 } else {
 }
 // it is up to you which one to use, switch is generally more error prone and less flexible
+
+///////////
+// LOOPS //
+///////////
+
+// iterations and loops allow us to repeat code while a given condition is true
+while(true) { // this code will repeat forever
+    break; // however, this will stop the loop
+}
+
+// it is common to use a variable to control the loop
+let i = 0; // this is the counter
+while(i < 10) { // this code will repeat 10 times
+    console.log(i); // this will print the numbers 0-9
+    i++; // this increments the counter
+}
+
+// this is so common, in fact, that there is a special loop for it
+for(let i = 0; i < 10; i++) { // this code will repeat 10 times
+    continue; // this will skip the rest of the loop and start the next iteration
+}
+
+// you can also loop over the items in an array
+for(const item of array_of_strings) { // this code will repeat once for each item in the array
+    console.log(item); // this will print each item in the array
+}
+
+// or the keys of an object
+for(const key in person) { // this code will repeat once for each key in the object
+    console.log(key); // this will print each key in the object
+}
+
+// there are other ways to loop called iterators, but they are rare and more advanced so we will cover them later

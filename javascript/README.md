@@ -80,10 +80,16 @@
     * switch
     * case
     * default
+* Loops
+    * while
+    * for
+    * break
+    * continue
+    * for...of
+    * for...in
 
 ### Pending Topics:
 
-* Iterations / Loops
 * Functions
     * Closure
     * scope - block, lexical, function
@@ -95,6 +101,7 @@
 * Date
 * Regular Expressions
 * Generators
+* Iteration
 * Template Strings
 * Other expressions
     * debugger
