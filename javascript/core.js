@@ -293,7 +293,7 @@ if(value === 1) {
 
 // iterations and loops allow us to repeat code while a given condition is true
 while(true) { // this code will repeat forever
-    break; // however, this will stop the loop
+    break; // however, this will stop the loop, keep in mind that you rarely need this, use it only as a last resort
 }
 
 // it is common to use a variable to control the loop
@@ -305,7 +305,7 @@ while(i < 10) { // this code will repeat 10 times
 
 // this is so common, in fact, that there is a special loop for it
 for(let i = 0; i < 10; i++) { // this code will repeat 10 times
-    continue; // this will skip the rest of the loop and start the next iteration
+    continue; // this will skip the rest of the loop and start the next iteration, keep in mind that you rarely need this, use it only as a last resort
 }
 
 // you can also loop over the items in an array

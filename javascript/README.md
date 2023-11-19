@@ -1,8 +1,8 @@
 # Javascript
 
-## [Core](https://github.com/nagolyhprum/all-of-coding/blob/main/javascript/core.js)
+JavaScript is a versatile and widely-used programming language primarily designed for creating dynamic and interactive content on the web. Initially developed for client-side scripting within web browsers, JavaScript has evolved to become a full-stack language, allowing developers to build both frontend and backend components of web applications.
 
-### How to run:
+## How to run:
 
 1. Online (Best for first timers)
     * Google search "Javascript Playground"
@@ -25,6 +25,8 @@
     * Copy + paste the Javascript where appropriate
     * Edit the html document to include the Javascript
     * Open the html document in your browser
+
+## [Core](https://github.com/nagolyhprum/all-of-coding/blob/main/javascript/core.js)
 
 ### Topics Covered:
 

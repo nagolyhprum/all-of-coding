@@ -4,6 +4,8 @@ Learn an entire programming language, in a single file.
 
 Languages:
 * [Javascript](https://github.com/nagolyhprum/all-of-programming/blob/main/javascript)
+* [Git](https://github.com/nagolyhprum/all-of-programming/blob/main/git)
+* VIM at 5 stars
 * Python at 10 stars
 * React at 25 stars
 * HTML at 50 stars
