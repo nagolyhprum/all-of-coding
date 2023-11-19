@@ -246,6 +246,11 @@ const bitwise_xor = 0b1010 ^ 0b1100; // gives 0b0110
 const bitwise_left_shift = 0b1010 << 1; // gives 0b10100
 const bitwise_right_shift = 0b1010 >> 1; // gives 0b101
 
+// there are also assignment operators
+const number = 0;
+number += 1; // inline assign
+number++; // auto increment
+
 ////////////////////////
 // CONTROL STRUCTURES //
 ////////////////////////
@@ -317,5 +322,10 @@ for(const item of array_of_strings) { // this code will repeat once for each ite
 for(const key in person) { // this code will repeat once for each key in the object
     console.log(key); // this will print each key in the object
 }
+
+// another very rarely used loop is the do-while loop
+do {
+    // this code will repeat at least once
+} while(false);
 
 // there are other ways to loop called iterators, but they are rare and more advanced so we will cover them later
