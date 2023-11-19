@@ -339,12 +339,14 @@ do {
 // function arguments allow us to specify the value of the paramters as we call the function
 
 // the following is a named function and is accessbile from anywhere in the file
-function add(a, b) { // this function takes 2 parameters, a and b
+function add(a, b = 3) { // this function takes 2 parameters, a and b, b is an optional argument with a default value of 3
     return a + b; // this function returns the sum of the parameters
 }
 
 const sum = add(1, 2); // this function call passes 2 arguments to the function, so a becomes 1 and b becomes 2
 // the value of sum should be 3
+// you can also spread arguments from an array
+const result = add(...[1, 2]); // this function call passes 2 arguments to the function, so a becomes 1 and b becomes 2
 
 // additionally there are two types of anonymous (unnamed) functions, it is only accessible after it is executed
 const normal_function = function(input) { // this is a normal function
@@ -402,3 +404,9 @@ function scoped_to_function() {
 
 // In general when you see curly braces you should think scope
 // Nested scopes can access variables from their parent scopes, but not the other way around
+
+// You common pattern to create scopes is to use an IIFE (immediately invoked function expression) or closure
+(function() {
+    // this code is scoped to the function
+})();
+// this pattern is used to prevent variables from leaking into the global scope and is commonly used in libraries

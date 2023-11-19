@@ -103,10 +103,11 @@ JavaScript is a versatile and widely-used programming language primarily designe
 
 ### Pending Topics:
 
-* Objects and Arrays
 * Error Handling
-* Promises and Asynchronous Javascript
 * Modules
+* Objects and Arrays
+* Promises and Asynchronous Javascript
+* Fetch
 * Date
 * Regular Expressions
 * Classes and Prototypes
