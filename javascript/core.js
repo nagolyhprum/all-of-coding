@@ -247,9 +247,9 @@ const bitwise_left_shift = 0b1010 << 1; // gives 0b10100
 const bitwise_right_shift = 0b1010 >> 1; // gives 0b101
 
 // there are also assignment operators
-const number = 0;
+let number = 0;
 number += 1; // inline assign
-number++; // auto increment
+number++; // increment
 
 ////////////////////////
 // CONTROL STRUCTURES //
@@ -329,3 +329,76 @@ do {
 } while(false);
 
 // there are other ways to loop called iterators, but they are rare and more advanced so we will cover them later
+
+///////////////
+// FUNCTIONS //
+///////////////
+
+// functions allow us to group code together and call it later
+// function parameters allow us to make our functions more flexible and reusable
+// function arguments allow us to specify the value of the paramters as we call the function
+
+// the following is a named function and is accessbile from anywhere in the file
+function add(a, b) { // this function takes 2 parameters, a and b
+    return a + b; // this function returns the sum of the parameters
+}
+
+const sum = add(1, 2); // this function call passes 2 arguments to the function, so a becomes 1 and b becomes 2
+// the value of sum should be 3
+
+// additionally there are two types of anonymous (unnamed) functions, it is only accessible after it is executed
+const normal_function = function(input) { // this is a normal function
+    return input;
+}
+
+const arrow_function = (input) => { // this is an arrow function
+    return input;
+}
+
+const inline_arrow_function = (input) => input; // this is an inline arrow function, it allows you to return a value in one experssion
+
+const inline_arrow_function_no_parenthesis = input => input; // this is an inline arrow function with no parenthesis, it only works with 1 parameter
+
+// The difference is that normal functions: 
+// * they have access to `arguments`
+// * have their own `this` reference (covered later)
+// * they can be used with the `new` keyword (covered later)
+
+// functions can also have variable parameters
+function add_all(...numbers) { // this function takes any number of parameters
+    let sum = 0;
+    for(const number of numbers) { // we can loop over the parameters
+        sum += number; // and add them all together
+    }
+    return sum;
+}
+// can take any number arguments, but the variable parameters must be last
+
+///////////
+// SCOPE //
+///////////
+
+// all variables have a lifetime, this is referred to as scope
+// `var` is scoped differently from `let` and `const`
+
+if(true) {
+    const scoped_to_block = "this variable is scoped to the block"; // this variable disappears when the block ends
+} else {
+    var global_scoped = "this variable is scoped to the file"; // this variable is accessible anywhere in the file, but it will not have a value
+}
+const lexical_scope = "a variable is lexical when it is declared outside of a variable and used inside"; // this variable is accessible anywhere in the file
+function scoped_to_function() {
+    const scoped_to_function = "this variable is scoped to the function"; // this variable disappears when the function ends
+    var also_scoped_to_function = "this variable is scoped to the function"; // this variable is accessible anywhere in the function
+}
+
+// why? because of hoisting, this causes the variables to be initialized before the code is executed
+
+// you can create a scope anywhere simply by adding curly braces
+{
+    const s = ""; // this variable is scoped to the block
+    // ... do more here
+} 
+
+// In general when you see curly braces you should think scope
+// Nested scopes can access variables from their parent scopes, but not the other way around

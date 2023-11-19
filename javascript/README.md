@@ -74,6 +74,8 @@ JavaScript is a versatile and widely-used programming language primarily designe
     * Comparision
     * Logical
     * Bitwise
+    * Inline assignment
+    * Increment
 * Control Structures
     * if
     * else if
@@ -89,19 +91,25 @@ JavaScript is a versatile and widely-used programming language primarily designe
     * continue
     * for...of
     * for...in
+    * do...while
+* Functions
+    * Named
+    * Normal anonymous
+    * Lambda anonymous
+* Scope
+    * Block
+    * Lexical
+    * Function
 
 ### Pending Topics:
 
-* Functions
-    * Closure
-    * scope - block, lexical, function
 * Objects and Arrays
 * Error Handling
 * Promises and Asynchronous Javascript
 * Modules
-* Classes and Prototypes
 * Date
 * Regular Expressions
+* Classes and Prototypes
 * Generators
 * Iteration
 * Template Strings
